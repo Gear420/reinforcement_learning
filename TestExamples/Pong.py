@@ -11,5 +11,6 @@ observation_n = env.reset()
 
 while True:
     action_n = [env.action_space.sample() for ob in observation_n]
+    print(action_n)
     observation_n, reward_n, done_n, info = env.step(action_n)
     env.render()
